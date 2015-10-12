@@ -20,7 +20,7 @@ var launched_count = 0;
     //
     function onDeviceReady() {
 		//event outputting to the phone informing that PhoneGap is ready
-		alert("device ready");
+		/*alert*/console.log("device ready");
         //event listener for resume and pause of the application
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
@@ -32,7 +32,7 @@ var launched_count = 0;
     // Handle the pause event
     //
     function onPause() {
-		alert("pause");
+		/*alert*/console.log("pause");
 		paused_count++;
 		updateDisplay();
     }
